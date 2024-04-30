@@ -29,6 +29,9 @@ add_action('after_setup_theme', 'theme_setup');
 // clinic_add_theme_scripts
 function clinic_add_theme_scripts()
 {
+    wp_enqueue_style('animate', get_template_directory_uri() . '/assets/css/animate.min.css', array(), '1.1', 'all');
+    wp_enqueue_style('carousel', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), '1.1', 'all');
+    wp_enqueue_style('tempusdominus', get_template_directory_uri() . '/assets/css/tempusdominus-bootstrap-4.min.css', array(), '1.1', 'all');
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.1', 'all');
     wp_enqueue_style('clinic-main', get_template_directory_uri() . '/assets/css/style.css', array(), '1.1', 'all');
     wp_enqueue_style('style', get_stylesheet_uri());
